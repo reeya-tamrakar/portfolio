@@ -108,13 +108,13 @@ nav.navbar .nav-link.active {
   position: sticky;
 }
 
-.banner a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .banner .ban {
   position: relative;
+}
+
+.banner .ban a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .banner .ban img {
