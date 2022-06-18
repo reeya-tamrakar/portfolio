@@ -108,6 +108,11 @@ nav.navbar .nav-link.active {
   position: sticky;
 }
 
+.banner a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .banner .ban {
   position: relative;
 }
@@ -250,5 +255,10 @@ footer ul li a:hover {
 
 footer ul li:hover > a {
   color: #3D0004;
+}
+
+footer p {
+  margin-top: 16px;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

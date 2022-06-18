@@ -79,6 +79,10 @@ nav.navbar {
   position: sticky;
 }
 .banner {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   .ban {
     position: relative;
     img {
@@ -201,4 +205,5 @@ footer {
       }
     }
   }
+  p { margin-top: 16px; margin-bottom: 0; }
 }
