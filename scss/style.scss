@@ -1,0 +1,204 @@
+@import "var";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box I !important;
+}
+@for $index from 1 through 6 {
+  h#{$index}{
+    font-family: 'Charis SIL', serif;
+  }
+}
+.logo {
+  font-weight: 700;
+  font-style: italic;
+  em {
+    color: rgb(228, 32, 10);
+  }
+}
+.top {
+  background: $red;
+  color: $white;
+  line-height: 30px;
+  text-align: center;
+  span {
+    margin-left: 20px;
+    display: inline-block;
+  }
+  .hi {
+    animation: golgol 3.5s ease-out forwards;
+    transform-origin: center;
+  }
+  .hello {
+    animation: tala 3.5s linear;
+    transform-origin: center;
+  }
+  .namaste {
+    animation: mathi 3.5s linear;
+    transform-origin: center;
+  }
+}
+nav.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  padding: 0;
+  .nav-link.active{
+    color: $red !important;
+  }
+}
+@keyframes golgol {
+  0% {
+    transform: translateX(-720px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(0) rotate(1800deg);
+  }
+}
+@keyframes tala {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes mathi {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.navbar {
+  position: sticky;
+}
+.banner {
+  .ban {
+    position: relative;
+    img {
+      width: 100%;
+      height: 600px;
+    }
+  }
+  .text {
+    .animate{
+      animation: animate 3s linear;
+    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    backdrop-filter: blur(3px);
+    padding: 20px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    .icons ul li {
+      display: inline-block;
+    }
+    .btn {
+      background: $red;
+      color: $brand;
+    }
+  }
+}
+@keyframes animate {
+  from{
+    transform: translateX(-50vw);
+  }
+  to{ transform: translateX(0);}
+}
+.about {
+  background: #baa898;
+  padding: 50px 0;
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+.resume {
+  h1 {
+    text-align: center;
+  }
+  padding: 50px 0;
+  background: #ded6ce;
+  .progress {
+    height: 10px;
+    .progress-bar {
+      background-color: $grey;
+    }
+  }
+}
+
+.expand-btn {
+  padding: 10px;
+  width: 60px;
+  background-color: $red;
+  color: $brand;
+  transition: 0.5s;
+  white-space: nowrap;
+  display: inline;
+  border: none;
+  font-family: 'Inconsolata', monospace;
+}
+.contact {
+  background: #baa898;
+
+  form input,
+  form textarea {
+    outline: 0;
+  }
+}
+.beautiful-underline {
+  position: relative;
+  display: inline-flex;
+}
+.beautiful-underline::after {
+  position: absolute;
+  width: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5px;
+  background-image: radial-gradient(#f6deca, #d5c0ad, #baa898);
+  border-radius: 50%;
+  content: "";
+  bottom: -15px;
+}
+ol,
+ul {
+  padding-left: 0 !important;
+}
+footer {
+  padding: 30px 0;
+  text-align: center;
+  background: $red;
+  color: $brand;
+  ul li {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 10px;
+    background: rgb(111, 75, 75);
+    border-radius: 50%;
+    line-height: 30px;
+    cursor: pointer;
+    &:hover {
+      background: $brand;
+      transition: 0.5s;
+    }
+    a,
+    a:hover {
+      text-decoration: none;
+      color: $brand;
+    }
+    &:hover {
+      & > a {
+        color: $red;
+      }
+    }
+  }
+}
