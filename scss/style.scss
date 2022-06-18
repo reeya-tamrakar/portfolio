@@ -80,10 +80,6 @@ nav.navbar {
 }
 .banner {
   .ban {
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
     position: relative;
     img {
       width: 100%;
@@ -94,6 +90,10 @@ nav.navbar {
     .animate{
       animation: animate 3s linear;
     }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
     position: absolute;
     top: 50%;
     left: 50%;
@@ -103,7 +103,9 @@ nav.navbar {
     transform: translate(-50%, -50%);
     .icons ul li {
       display: inline-block;
+      color: black;
     }
+    .expand-btn { color: $white; }
     .btn {
       background: $red;
       color: $brand;
